@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PARKIR FILKOM</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+      integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
+      crossorigin="anonymous"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link rel="stylesheet" href="style2.css" />
+  </head>
+</head>
+<body>
+    <header id="home">
+        <section>
+            <div class="container">
+              <nav
+                class="d-flex align-items-center justify-content-center justify-content-lg-between"
+              >
+                <a class="navbar-brand" href="index.html" class="">
+                  PARKIR FILKOM
+                </a>
+                <ul class="nav-list text-center p-0">
+                  <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#about">Pengumuman</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#contact">Contact</a>
+                  </li>
+                </ul>
+              </nav>
+          <section>
+            <div class="wire text w-100 text-white px-2 px-sm-0 text-center">
+                <h1 class="display-4">Ketersediaan Parkir</h1>
+                <div class="number">
+                    <span class="minus mb-4">-</span>
+                    <input type="text mb-4" value="1"/>
+                    <span class="plus ">+</span>
+                </div>
+            </div>
+    </header>
+    <footer>
+      <div class="bottom-container">
+        <a href="https://www.instagram.com/mufadhlyrobbani_4/" target="_blank" class="footer-link"><i class="fab fa-instagram 5X"></i></a>
+        <a href="" class="footer-link"><i class="fab fa-facebook"></i></a>
+        <a href="https://wa.me/6285921722974" target="_blank" class="footer-link"><i class="fab fa-whatsapp"></i></a>
+        <p class="copyright">copyright 2021 Kelompok 1</p>
+    </footer>
+    </script> 
+      <script src="https://kit.fontawesome.com/ba33ab971e.js"></script>
+      <script
+        src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"
+      ></script> 
+      <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"
+      ></script>
+      <script
+        src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"
+      ></script>
+      <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+      <script>
+          $(() => {
+              $('.hamburger-menu').on('click',() => {
+                  $('.toggle').toggleClass('open');
+                  $('.nav-list').toggleClass('open');
+              });
+  
+              AOS.init({
+                  easing:'ease',
+                  duration: 1000,
+              });
+          });
+      </script>
+      <script>
+        $(document).ready(function() {
+    $('.minus').click(function () {
+        var $input = $(this).parent().find('input');
+        var count = parseInt($input.val()) - 1;
+        count = count < 1 ? 1 : count;
+        $input.val(count);
+        $input.change();
+        return false;
+    });
+    $('.plus').click(function () {
+        var $input = $(this).parent().find('input');
+        $input.val(parseInt($input.val()) + 1);
+        $input.change();
+        return false;
+    });
+});
+      </script>
+
+</body>
+</html>
